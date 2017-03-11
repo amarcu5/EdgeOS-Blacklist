@@ -1,7 +1,7 @@
 #!/bin/vbash
 
 BLACKLIST=(
-	#Suggestions
+    #Suggestions
     "https://www.spamhaus.org/drop/drop.txt"
     "https://www.spamhaus.org/drop/edrop.txt"
     "https://www.spamhaus.org/drop/dropv6.txt"
@@ -21,7 +21,7 @@ BLACKLIST=(
 )
 
 WHITELIST=(
-	#Suggestions
+    #Suggestions
     "10.0.0.0/8"
     "172.16.0.0/12"
     "192.168.0.0/16"
