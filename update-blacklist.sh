@@ -75,7 +75,7 @@ EOF
 
 } >"$TMPFILE"
 
-result=$(sudo ipset -file "$TMPFILE" restore 2>&1)
+result=$(/sbin/ipset -file "$TMPFILE" restore 2>&1)
 if [[ ! -z "$result" ]]
 then
   lineno=$(sed -n 's/.*line \([[:digit:]]\+\):.*/\1/p' <<<"$result")
